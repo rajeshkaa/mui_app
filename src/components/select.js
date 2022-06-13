@@ -6,8 +6,8 @@ export default function Select() {
     console.log(countries);
 const handleCountry=(event)=>{
   const val=event.target.value
-  // setcountries(typeof(val) === 'string' ? val.split(',') : val)
-  setcountries(val)
+  setcountries(typeof(val) === 'string' ? val.split(',') : val)
+  setcountries()
 }
   return (
     <Box width='250px'>
